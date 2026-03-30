@@ -10,39 +10,11 @@
 // @match        https://www.bondage-europe.com/*
 // @run-at       document-end
 // @grant        none
-// ==/UserScript==
-
-// ─────────────────────────────────────────────────────────────────────────────
-// HOW TO USE THIS LOADER
-// ─────────────────────────────────────────────────────────────────────────────
-// 1. Upload nft.js to a public URL (e.g. GitHub Pages at
-//    https://YOUR_USERNAME.github.io/nft-bc-addon/nft.js)
-// 2. Replace ADDON_URL below with that URL.
-// 3. Install this loader in Tampermonkey / Violentmonkey.
-//
-// HOW TO GET LISTED IN FUSAM
-// ─────────────────────────────────────────────────────────────────────────────
-// Once your nft.js is publicly hosted:
-// • Join the BC Scripting Community Discord and ask to be added, OR
-// • Submit a merge request to https://gitlab.com/Sidiousious/bc-addon-loader
-//   adding an entry to manifest.json (see format below).
-//
-// manifest.json entry template:
-// {
-//   "id": "NFT",
-//   "name": "NFT - Nest of Fluffy Treasures",
-//   "description": "Save and restore ItemHandheld / ItemMisc items with full appearance, crafter info and properties.",
-//   "url": "https://YOUR_USERNAME.github.io/nft-bc-addon/nft.js",
-//   "type": "eval",
-//   "version": "1.3.0",
-//   "author": "Your Name"
-// }
-// ─────────────────────────────────────────────────────────────────────────────
 
 (function () {
   "use strict";
 
-  const ADDON_URL = "https://nicole-bc.github.io/Nest-of-Fluffy-Treasures/";
+  const ADDON_URL = "https://nicole-bc.github.io/Nest-of-Fluffy-Treasures/ntf.js";
 
   // Cache-bust on every load so players always get the latest version
   const url = ADDON_URL + "?_=" + Date.now();
