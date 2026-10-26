@@ -6,7 +6,7 @@ const NFT_API = bcModSDK.registerMod({
     name: 'NFT - DEV',
     fullName: 'Nest of Fluffy Treasures',
     version: NFTver,
-    repository: 'https://gitgud.io/NicoleBC/nest-of-fluffy-treasures'
+    repository: 'https://github.com/Nicole-bc/Nest-of-Fluffy-Treasures'
 });
 
 // Double-load guard: bail out if the addon is already running
@@ -614,7 +614,7 @@ if (typeof window.__NFT_LOADED__ !== "undefined") {
     // A crafted item (for example "Mini Nicole", crafted from the Fox Plush) gets drawn
     // with our own picture instead of the original art. Only players who run NFT see it.
     // Pictures live in the "plushies" folder next to this script.
-    const PLUSH_BASE_URL = window.NFT_PLUSH_BASE || "https://nicole-bc-group.gitlab.io/NFT/plushies/";
+    const PLUSH_BASE_URL = window.NFT_PLUSH_BASE || "https://github.com/Nicole-bc/Nest-of-Fluffy-Treasures/";
     const PLUSH_SKINS = [
       {
         craftNames: ["Mini Nicole", "Plushie_Nicole"], // crafted item name(s) that use this picture
